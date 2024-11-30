@@ -8,6 +8,18 @@
                     0 6px 30px 5px rgba(0, 0, 0, 0.12),
                     0 8px 10px -5px rgba(0, 0, 0, 0.2);
     }
+
+    .orange-gradient {
+        background: linear-gradient(0deg, #bb3106 0%, #ff5f2e 100%);
+    }
+
+    .shadow-gradient {
+        background: linear-gradient(360deg, #020024 0%, rgba(74, 94, 121, 0.25) 55%, rgba(0, 78, 119, 0.15) 100%);
+    }
+
+    .text-shadow {
+        text-shadow: 0 0 0 #000, 0 0 1em #000;
+    }
 }
 
 * {

@@ -6,7 +6,7 @@ function Header() {
         <div className="bg-dark text-white px-4 py-1 relative z-[1]">
             <div className="container mx-auto">
                 <div className="flex flex-wrap items-center justify-center lg:justify-start">
-                    <Link to={'/'}>
+                    <Link to={'/'} className="focus:outline-none">
                         <img src={logo_bg} className="mr-2" height="128px" width="128px" alt="logo"/>
                     </Link>
                     <ul className="font-semibold text-[18px] lg:mr-auto md:mb-0 justify-center flex flex-wrap pl-0 list-none w-auto py-2">
