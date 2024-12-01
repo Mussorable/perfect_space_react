@@ -1,6 +1,9 @@
 import { useOutletContext } from "react-router-dom";
 import { useEffect } from "react";
 import newApartment from "../../assets/realisations/new_apartment.webp";
+import Section from "./sections/Section.tsx";
+import Offers from "./sections/homePage/Offers.tsx";
+import RealisationsExample from "./sections/homePage/RealisationsExample.tsx";
 
 function HomePage() {
     const { setBgImageSrc } = useOutletContext<{ setBgImageSrc: (src: string) => void }>();
@@ -11,7 +14,11 @@ function HomePage() {
 
     return (
         <>
-            <h1>Home Page</h1>
+            <Offers />
+            <RealisationsExample />
+            <Section></Section>
+            <Section></Section>
+            <Section></Section>
         </>
     );
 }

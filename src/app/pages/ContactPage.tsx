@@ -1,0 +1,20 @@
+import { useOutletContext } from "react-router-dom";
+import { useEffect } from "react";
+import readyRenovation from "../../assets/realisations/ready_renovation.webp";
+import ContactForm from "./sections/contactPage/ContactForm.tsx";
+
+function ContactPage() {
+    const { setBgImageSrc } = useOutletContext<{ setBgImageSrc: (src: string) => void }>();
+
+    useEffect(() => {
+        setBgImageSrc(readyRenovation);
+    }, []);
+
+    return (
+        <>
+            <ContactForm />
+        </>
+    );
+}
+
+export default ContactPage;

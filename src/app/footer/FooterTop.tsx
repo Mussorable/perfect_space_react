@@ -1,4 +1,4 @@
-import rightArrow from "../../assets/right-arrow.svg";
+import rightArrow from "../../assets/svg/right-arrow.svg";
 
 function FooterTop() {
     return (
