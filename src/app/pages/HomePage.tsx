@@ -6,10 +6,14 @@ import Offers from "./sections/homePage/Offers.tsx";
 import RealisationsExample from "./sections/homePage/RealisationsExample.tsx";
 
 function HomePage() {
-    const { setBgImageSrc } = useOutletContext<{ setBgImageSrc: (src: string) => void }>();
+    const { setBgImageSrc, setPageTitle } = useOutletContext<{
+        setBgImageSrc: (src: string) => void,
+        setPageTitle: (title: string) => void,
+    }>();
 
     useEffect(() => {
         setBgImageSrc(newApartment);
+        setPageTitle("Perfect Space");
     }, []);
 
     return (

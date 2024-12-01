@@ -54,11 +54,11 @@ function ContactForm() {
                              className="absolute top-[18px] left-[-35px]"/>
                         <h5 className="font-semibold inline-block my-6 mx-3 text-xl">Contact Details</h5>
                         <address className="text-gray-600 font-normal text-md mx-3 not-italic">
-                            Tomasz Nawrocki
+                            { import.meta.env.VITE_OWNER }
                             <br/>
-                            +48 723 569 435
+                            { import.meta.env.VITE_CONTACT_PHONE }
                             <br/>
-                            contact@perfect-space.pl
+                            { import.meta.env.VITE_CONTACT_EMAIL }
                         </address>
                     </div>
                     <div className="relative">
