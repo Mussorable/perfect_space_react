@@ -20,6 +20,33 @@
     .text-shadow {
         text-shadow: 0 0 0 #000, 0 0 1em #000;
     }
+
+    .diamonds-container {
+        grid-template-columns: 1fr 0.2fr 1fr 0.2fr 1fr 0.2fr 1fr;
+        flex-grow: 0;
+        grid-auto-rows: 220px;
+    }
+
+    .diamond {
+        position: relative;
+        overflow: hidden;
+        border-radius: 5px;
+        border: 4px solid #333;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    }
+
+    .diamond-content {
+        width: 220px;
+        height: 220px;
+        transform: rotate(45deg);
+    }
+
+    .diamond-black {
+        transform: translateY(-50%) rotate(45deg);
+        width: 110px;
+        height: 110px;
+        background-color: #333;
+    }
 }
 
 * {

@@ -5,7 +5,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        'orange': '#f16236',
+        'orange': '#f84f1c',
         'dark': '#212529',
         'milk': '#f8f9fa',
         'lemon': '#ffc107',
