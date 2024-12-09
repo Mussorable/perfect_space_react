@@ -47,6 +47,35 @@
         height: 110px;
         background-color: #333;
     }
+
+    .cloud-review {
+        position: absolute;
+        border-radius: 5px;
+        box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14),
+                    0 3px 14px 2px rgba(0, 0, 0, 0.32),
+                    0 5px 5px -3px rgba(0, 0, 0, 0.2);
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+    }
+
+    .option-raised {
+        position: relative;
+        overflow: hidden;
+        border-radius: 5px;
+        transition: box-shadow 0.3s ease-in-out;
+        box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
+                    0 6px 30px 5px rgba(0, 0, 0, 0.12),
+                    0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    }
+
+    .marker {
+        background-image: url('https://docs.mapbox.com/demos/custom-markers-gl-js/mapbox-icon.png');
+        background-size: cover;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
 }
 
 * {

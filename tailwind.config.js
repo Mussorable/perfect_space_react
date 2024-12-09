@@ -6,6 +6,7 @@ export default {
     extend: {
       colors: {
         'orange': '#f84f1c',
+        'light-orange': '#ff3715',
         'dark': '#212529',
         'milk': '#f8f9fa',
         'lemon': '#ffc107',
