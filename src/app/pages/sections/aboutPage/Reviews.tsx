@@ -6,8 +6,22 @@ import ceilingUrl from "../../../../assets/preview/option_ceiling.webp";
 import planUrl from "../../../../assets/preview/option_making_plan.webp";
 import wallsUrl from "../../../../assets/preview/option_walls.webp";
 import floorUrl from "../../../../assets/preview/option_wooden_floor.webp";
+import { useEffect, useRef } from "react";
 
 function Reviews() {
+    const cloudRefs = useRef<HTMLImageElement[]>([]);
+
+    useEffect(() => {
+        cloudRefs.current.forEach((element) => {
+            const duration = Math.floor(Math.random() * 5 + 5);
+            element.style.animationDuration = `${duration}s`;
+        });
+    }, []);
+
+    const addRef = (el: HTMLImageElement | null) => {
+        if (el && !cloudRefs.current.includes(el)) cloudRefs.current.push(el);
+    }
+
     return (
         <Section>
             <div className="flex flex-wrap">
@@ -20,12 +34,12 @@ function Reviews() {
                 </div>
                 <div className="w-1/2 mx-auto">
                     <div className="max-w-5xl mt-[-140px] relative h-[560px]">
-                        <img className="w-auto my-0 mx-auto block max-h-[560px] object-cover" src={houseUrl} alt="White modern house"/>
-                        <img className="left-[5%] top-[51%] h-[180px] cloud-review" src={bathroomUrl} alt="Bathroom"/>
-                        <img className="left-[15%] top-[9%] h-[140px] cloud-review" src={ceilingUrl} alt="Light ceiling"/>
-                        <img className="left-[53%] top-[2%] h-[170px] cloud-review" src={planUrl} alt="cartoon house with pencil and paper"/>
-                        <img className="left-[70%] top-[34%] h-[190px] cloud-review" src={wallsUrl} alt="Well done different walls"/>
-                        <img className="left-[60%] top-[78%] h-[140px] cloud-review" src={floorUrl} alt="Wooden floor"/>
+                        <img ref={addRef} className="w-auto my-0 mx-auto block max-h-[560px] object-cover cloud-abstraction" src={houseUrl} alt="White modern house"/>
+                        <img ref={addRef} className="left-[5%] animate-right top-[51%] h-[180px] cloud-review cloud-abstraction" src={bathroomUrl} alt="Bathroom"/>
+                        <img ref={addRef} className="left-[15%] animate-right top-[9%] h-[140px] cloud-review cloud-abstraction" src={ceilingUrl} alt="Light ceiling"/>
+                        <img ref={addRef} className="left-[53%] animate-left top-[2%] h-[170px] cloud-review cloud-abstraction" src={planUrl} alt="cartoon house with pencil and paper"/>
+                        <img ref={addRef} className="left-[70%] animate-left top-[34%] h-[190px] cloud-review cloud-abstraction" src={wallsUrl} alt="Well done different walls"/>
+                        <img ref={addRef} className="left-[60%] animate-left top-[78%] h-[140px] cloud-review cloud-abstraction" src={floorUrl} alt="Wooden floor"/>
                     </div>
                 </div>
             </div>

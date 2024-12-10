@@ -4,6 +4,7 @@ import Address from "./sections/aboutPage/Address.tsx";
 import { useOutletContext } from "react-router-dom";
 import { useEffect } from "react";
 import rw3 from "../../assets/realisations/example_rw_3.webp";
+import Consulting from "./sections/aboutPage/Consulting.tsx";
 
 function AboutPage() {
     const { setBgImageSrc, setPageTitle } = useOutletContext<{
@@ -20,6 +21,7 @@ function AboutPage() {
         <>
             <Advantages />
             <Reviews />
+            <Consulting />
             <Address />
         </>
     );

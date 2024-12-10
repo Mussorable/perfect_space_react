@@ -15,7 +15,7 @@ function FooterTop() {
                     </label>
                     <input type="email" id="email" autoComplete="on" required className="text-milk bg-inherit focus:bg-stone-700 border-2 placeholder:text-milk placeholder:focus:opacity-50 placeholder:transition placeholder:delay-[30] border-milk rounded-md px-4 py-2 w-full transition delay-[50] mb-5" placeholder="Email"/>
                     <div className="relative inline-block">
-                        <input type="submit" value="Send" className="bg-milk text-dark border-none rounded-sm py-2 pl-4 pr-10 font-bold uppercase cursor-pointer"/>
+                        <input type="submit" value="Send" className="bg-milk hover:bg-gray-200 hover:white-hover-box transition delay-[35] text-dark border-none rounded-sm py-2 pl-4 pr-10 font-bold uppercase cursor-pointer"/>
                         <img src={rightArrow} alt="Right arrow" className="absolute pointer-events-none text-dark top-[-2px] right-0 w-[45px] h-[45px]"/>
                     </div>
                 </form>
