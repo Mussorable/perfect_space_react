@@ -3,7 +3,7 @@ import Section from "../Section.tsx";
 function Summary() {
     return (
         <Section>
-            <div className="font-bold">
+            <div id="block2" className="font-bold">
                 <div>
                     <h4 className="text-orange border-b-[1px] border-b-orange text-4xl mb-12 px-5 leading-snug">Summary</h4>
                 </div>

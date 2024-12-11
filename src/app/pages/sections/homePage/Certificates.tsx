@@ -15,7 +15,7 @@ function Certificates() {
 
     return (
         <Section>
-            <div className="justify-center">
+            <div id="block3" className="justify-center">
                 <div className="text-center mb-6">
                     <h2 className="font-semibold text-3xl">Our Certificates</h2>
                     <p>A presentation of official certificates confirming the quality, expertise, and reliability of our

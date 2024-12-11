@@ -87,8 +87,8 @@ function Address() {
 
 const script = document.createElement("script");
 script.src = "https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js";
-// script.async = true;
-// script.defer = true;
+script.async = true;
+script.defer = true;
 document.body.appendChild(script);
 
 export default Address;
