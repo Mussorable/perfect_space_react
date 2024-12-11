@@ -4,8 +4,15 @@ import pr1 from "../../../../assets/realisations/pr_1.webp";
 import pr2 from "../../../../assets/realisations/pr_2.webp";
 import pr3 from "../../../../assets/realisations/pr_3.webp";
 import pr4 from "../../../../assets/realisations/pr_4.webp";
+import magnifierUrl from "../../../../assets/svg/magnifier.svg";
+import { useOutletContext } from "react-router-dom";
+import {MouseEvent} from "react";
 
 function RealisationsExample() {
+    const { handleOpenImage } = useOutletContext<{
+        handleOpenImage: (event: MouseEvent<HTMLDivElement>) => void,
+    }>();
+
     return (
         <Section>
             <div className="justify-center">
@@ -17,32 +24,40 @@ function RealisationsExample() {
             <div className="flex flex-wrap">
                 <div className="w-1/3">
                     <div className="mb-7">
-                        <div className="px-3 relative max-w-full m-auto overflow-hidden max-h-[400px] h-[400px]">
-                            <img src="" alt=""/>
+                        <div onClick={handleOpenImage} className="px-3 relative max-w-full m-auto overflow-hidden max-h-[400px] h-[400px] group cursor-pointer">
+                            <div className="absolute p-3 bg-milk rounded-full find-center-magnifier border-2 border-orange opacity-0 group-hover:opacity-80">
+                                <img src={ magnifierUrl } alt=""/>
+                            </div>
                             <img className="w-full h-full object-cover mx-auto block max-w-full" src={ pr1 } alt=""/>
                         </div>
                     </div>
                 </div>
                 <div className="w-2/3">
                     <div className="mb-7">
-                        <div className="px-3 relative max-w-full m-auto overflow-hidden max-h-[400px] h-[400px]">
-                            <img src="" alt=""/>
+                        <div onClick={handleOpenImage} className="px-3 relative max-w-full m-auto overflow-hidden max-h-[400px] h-[400px] group cursor-pointer">
+                            <div className="absolute p-3 bg-milk rounded-full find-center-magnifier border-2 border-orange opacity-0 group-hover:opacity-80">
+                                <img src={ magnifierUrl } alt=""/>
+                            </div>
                             <img className="w-full h-full object-cover mx-auto block max-w-full" src={ pr3 } alt=""/>
                         </div>
                     </div>
                 </div>
                 <div className="w-2/3">
                     <div className="mb-7">
-                        <div className="px-3 relative max-w-full m-auto overflow-hidden max-h-[400px] h-[400px]">
-                            <img src="" alt=""/>
+                        <div onClick={handleOpenImage} className="px-3 relative max-w-full m-auto overflow-hidden max-h-[400px] h-[400px] group cursor-pointer">
+                            <div className="absolute p-3 bg-milk rounded-full find-center-magnifier border-2 border-orange opacity-0 group-hover:opacity-80">
+                                <img src={ magnifierUrl } alt=""/>
+                            </div>
                             <img className="w-full h-full object-cover mx-auto block max-w-full" src={ pr2 } alt=""/>
                         </div>
                     </div>
                 </div>
                 <div className="w-1/3">
                     <div className="mb-7">
-                        <div className="px-3 relative max-w-full m-auto overflow-hidden max-h-[400px] h-[400px]">
-                            <img src="" alt=""/>
+                        <div onClick={handleOpenImage} className="px-3 relative max-w-full m-auto overflow-hidden max-h-[400px] h-[400px] group cursor-pointer">
+                            <div className="absolute p-3 bg-milk rounded-full find-center-magnifier border-2 border-orange opacity-0 group-hover:opacity-80">
+                                <img src={ magnifierUrl } alt=""/>
+                            </div>
                             <img className="w-full h-full object-cover mx-auto block max-w-full" src={ pr4 } alt=""/>
                         </div>
                     </div>

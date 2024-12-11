@@ -59,7 +59,7 @@ function Address() {
 
     return (
         <Section>
-            <div ref={component} className={ `flex flex-wrap justify-center gap-4 opacity-0 transition-all duration-[500ms] ease-out translate-y-[100px] ${ isVisible ? "opacity-100 translate-y-0" : "" }` }>
+            <div ref={component} className={ `flex flex-wrap justify-center gap-4 opacity-0 transition-all duration-[500ms] ease-out translate-y-[100px] ${ isVisible ? "opacity-100 !translate-y-0" : "" }` }>
                 <div className="w-4/12 option-raised hover:cloud-hover">
                     <img src={placeholderUrl} className="inline-block absolute left-[-29%] -z-[1]" alt="Location icon"/>
                     <div className="pl-6">
