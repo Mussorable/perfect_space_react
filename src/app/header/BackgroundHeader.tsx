@@ -35,15 +35,15 @@ function BackgroundHeader({bgImageSrc, pageTitle}: BackgroundHeaderProps) {
                 <div>
                     <div className="mx-auto">
                         <div className="text-white text-center">
-                            <h1 className="text-8xl font-semibold text-shadow">{ pageTitle }</h1>
+                            <h1 className="lg:text-8xl text-5xl font-semibold text-shadow">{ pageTitle }</h1>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <div className="w-1/3">
+                    <div className="ml-4 mt-4 w-2/3 lg:w-1/3">
                         <div className={ `text-shadow transition delay-100 ease-in opacity-0 translate-x-1/4 ${ visible ? 'opacity-100 !translate-x-0' : ''}` }>
-                            <p className="text-6xl text-orange my-0 font-semibold leading-none">Swift and Reliable</p>
-                            <p className="text-5xl text-gray-300 my-0 font-semibold ml-[25px]">Quality</p>
+                            <p className="lg:text-6xl text-3xl text-orange my-0 font-semibold leading-none">Swift and Reliable</p>
+                            <p className="lg:text-5xl text-3xl text-gray-300 my-0 font-semibold ml-[25px]">Quality</p>
                         </div>
                     </div>
                 </div>

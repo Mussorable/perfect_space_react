@@ -16,13 +16,13 @@ function Certificates() {
     return (
         <Section>
             <div id="block3" className="justify-center">
-                <div className="text-center mb-6">
-                    <h2 className="font-semibold text-3xl">Our Certificates</h2>
+                <div className="text-center mb-6 mx-2 lg:mx-0">
+                    <h2 className="font-semibold text-2xl lg:text-3xl">Our Certificates</h2>
                     <p>A presentation of official certificates confirming the quality, expertise, and reliability of our
                         construction services.</p>
                 </div>
             </div>
-            <div className="diamonds-container mt-20 mb-12 grid place-items-center">
+            <div className="diamonds-container mt-20 mb-12 lg:grid flex flex-col gap-y-6 place-items-center">
                 <div onClick={handleOpenImage} className="group diamond diamond-content">
                     <div className="absolute p-3 bg-milk rounded-full find-center-magnifier border-2 z-[3] -rotate-45 border-orange opacity-0 group-hover:opacity-80">
                         <img src={ magnifierUrl } alt=""/>
@@ -33,7 +33,7 @@ function Certificates() {
                         alt=""
                     />
                 </div>
-                <div className="diamond diamond-black"></div>
+                <div className="diamond diamond-black hidden lg:block"></div>
                 <div onClick={handleOpenImage} className="group diamond diamond-content">
                     <div className="absolute p-3 bg-milk rounded-full find-center-magnifier border-2 z-[3] -rotate-45 translate-y border-orange opacity-0 group-hover:opacity-80">
                         <img src={ magnifierUrl } alt=""/>
@@ -44,7 +44,7 @@ function Certificates() {
                         alt=""
                     />
                 </div>
-                <div className="diamond diamond-black"></div>
+                <div className="diamond diamond-black hidden lg:block"></div>
                 <div onClick={handleOpenImage} className="group diamond diamond-content">
                     <div className="absolute p-3 bg-milk rounded-full find-center-magnifier border-2 z-[3] -rotate-45 translate-y border-orange opacity-0 group-hover:opacity-80">
                         <img src={ magnifierUrl } alt=""/>
@@ -55,7 +55,7 @@ function Certificates() {
                         alt=""
                     />
                 </div>
-                <div className="diamond diamond-black"></div>
+                <div className="diamond diamond-black hidden lg:block"></div>
                 <div onClick={handleOpenImage} className="group diamond diamond-content">
                     <div className="absolute p-3 bg-milk rounded-full find-center-magnifier border-2 z-[3] -rotate-45 translate-y border-orange opacity-0 group-hover:opacity-80">
                         <img src={ magnifierUrl } alt=""/>

@@ -25,7 +25,7 @@ function Layer() {
             <Header />
             <BackgroundHeader bgImageSrc={bgImageSrc} pageTitle={pageTitle} />
             <div
-                className="mt-[-60px] mr-[60px] mb-0 ml-[60px] rounded-[6px] box-raised bg-white relative z-[3]">
+                className="mt-[-60px] lg:mx-[60px] mb-0 rounded-[6px] box-raised bg-white relative z-[3]">
                 <Outlet context={{ setBgImageSrc, setPageTitle, handleOpenImage }} />
             </div>
             <Lightbox imgUrl={highlightedImg} handleOnClick={setHighlightedImg} />

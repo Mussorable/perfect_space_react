@@ -7,7 +7,7 @@ interface SectionProps {
 
 function Section({ className, children }: SectionProps) {
     return (
-        <div className={`py-16 bg-cover bg-center ${className || ""}`}>
+        <div className={`py-4 lg:py-16 bg-cover bg-center ${className || ""}`}>
             <div className="container mx-auto">
                 {children}
             </div>

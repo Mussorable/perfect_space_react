@@ -16,13 +16,13 @@ function RealisationsExample() {
     return (
         <Section>
             <div id="block1" className="justify-center">
-                <div className="text-center mb-6">
-                    <h2 className="font-semibold text-3xl">Our recent projects might amaze you</h2>
+                <div className="text-center mb-6 mx-2 lg:mx-0">
+                    <h2 className="font-semibold text-2xl lg:text-3xl">Our recent projects might amaze you</h2>
                     <p>Check out our impressive work in a small gallery</p>
                 </div>
             </div>
             <div className="flex flex-wrap">
-                <div className="w-1/3">
+                <div className="lg:w-1/3 w-full">
                     <div className="mb-7">
                         <div onClick={handleOpenImage} className="px-3 relative max-w-full m-auto overflow-hidden max-h-[400px] h-[400px] group cursor-pointer">
                             <div className="absolute p-3 bg-milk rounded-full find-center-magnifier border-2 border-orange opacity-0 group-hover:opacity-80">
@@ -32,7 +32,7 @@ function RealisationsExample() {
                         </div>
                     </div>
                 </div>
-                <div className="w-2/3">
+                <div className="lg:w-2/3 w-full">
                     <div className="mb-7">
                         <div onClick={handleOpenImage} className="px-3 relative max-w-full m-auto overflow-hidden max-h-[400px] h-[400px] group cursor-pointer">
                             <div className="absolute p-3 bg-milk rounded-full find-center-magnifier border-2 border-orange opacity-0 group-hover:opacity-80">
@@ -42,7 +42,7 @@ function RealisationsExample() {
                         </div>
                     </div>
                 </div>
-                <div className="w-2/3">
+                <div className="lg:w-2/3 w-full">
                     <div className="mb-7">
                         <div onClick={handleOpenImage} className="px-3 relative max-w-full m-auto overflow-hidden max-h-[400px] h-[400px] group cursor-pointer">
                             <div className="absolute p-3 bg-milk rounded-full find-center-magnifier border-2 border-orange opacity-0 group-hover:opacity-80">
@@ -52,7 +52,7 @@ function RealisationsExample() {
                         </div>
                     </div>
                 </div>
-                <div className="w-1/3">
+                <div className="lg:w-1/3 w-full">
                     <div className="mb-7">
                         <div onClick={handleOpenImage} className="px-3 relative max-w-full m-auto overflow-hidden max-h-[400px] h-[400px] group cursor-pointer">
                             <div className="absolute p-3 bg-milk rounded-full find-center-magnifier border-2 border-orange opacity-0 group-hover:opacity-80">

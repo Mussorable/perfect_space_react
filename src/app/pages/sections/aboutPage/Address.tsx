@@ -47,7 +47,7 @@ function Address() {
                 } else {
                     setIsVisible(false);
                 }
-            }, { threshold: 0.5 }
+            }, { threshold: 0.3 }
         );
 
         if (component.current) observer.observe(component.current);
@@ -59,8 +59,8 @@ function Address() {
 
     return (
         <Section>
-            <div ref={component} className={ `flex flex-wrap justify-center gap-4 opacity-0 transition-all duration-[500ms] ease-out translate-y-[100px] ${ isVisible ? "opacity-100 !translate-y-0" : "" }` }>
-                <div className="w-4/12 option-raised hover:cloud-hover">
+            <div ref={component} className={ `flex flex-wrap relative justify-center gap-4 opacity-0 transition-all duration-[500ms] ease-out translate-y-[100px] ${ isVisible ? "opacity-100 !translate-y-0" : "" }` }>
+                <div className="w-full mx-4 lg:mx-0 lg:w-4/12 option-raised hover:cloud-hover">
                     <img src={placeholderUrl} className="inline-block absolute left-[-29%] -z-[1]" alt="Location icon"/>
                     <div className="pl-6">
                         <h4 className="text-4xl my-4 font-semibold">Address:</h4>
@@ -77,7 +77,7 @@ function Address() {
                         <Link className="font-normal hover:button-hover-box cursor-pointer px-8 py-1.5 text-xl rounded-md text-center transition delay-[30] text-dark bg-orange hover:bg-light-orange" to="/contact">Contact us</Link>
                     </div>
                 </div>
-                <div className="w-6/12 option-raised border-2 hover:cloud-hover border-dark">
+                <div className="w-full mx-4 h-[240px] lg:h-[521px] lg:mx-0 lg:w-6/12 option-raised border-2 hover:cloud-hover border-dark">
                     <div id="map" className="h-full"></div>
                 </div>
             </div>

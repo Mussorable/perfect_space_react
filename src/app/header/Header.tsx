@@ -9,13 +9,13 @@ function Header() {
                     <Link to={'/'} className="focus:outline-none">
                         <img src={logo_bg} className="mr-2" height="128px" width="128px" alt="logo"/>
                     </Link>
-                    <ul className="font-semibold text-[18px] lg:mr-auto md:mb-0 justify-center flex flex-wrap pl-0 list-none w-auto py-2">
+                    <ul className="font-semibold text-[18px] mb-4 lg:mr-auto lg:mb-0 justify-center flex flex-wrap pl-0 list-none w-auto py-2">
                         <li><NavLink className={({isActive}) =>`text-[15px] uppercase px-2 py-2 transition duration-200 hover:text-orange ${isActive ? 'active' : ''}`} to={'/'}>Home</NavLink></li>
                         <li><NavLink className={({isActive}) =>`text-[15px] uppercase px-2 py-2 transition duration-200 hover:text-orange ${isActive ? 'active' : ''}`} to={'/about'}>About Us</NavLink></li>
                         <li><NavLink className={({isActive}) =>`text-[15px] uppercase px-2 py-2 transition duration-200 hover:text-orange ${isActive ? 'active' : ''}`} to={'/services'}>Services</NavLink></li>
                         <li><NavLink className={({isActive}) =>`text-[15px] uppercase px-2 py-2 transition duration-200 hover:text-orange ${isActive ? 'active' : ''}`} to={'/realisations'}>Realisations</NavLink></li>
                     </ul>
-                    <ul className="font-semibold text-[18px] mb-0 justify-center flex flex-wrap list-none">
+                    <ul className="font-semibold text-[18px] mb-4 lg:mb-0 justify-center flex flex-wrap list-none">
                         <li>
                             <Link className="font-normal cursor-pointer px-3 py-1.5 text-base mr-2 text-center text-milk hover:text-dark border-milk hover:bg-milk border-[1px] rounded-md" to={'/reviews'}>Reviews</Link>
                         </li>
